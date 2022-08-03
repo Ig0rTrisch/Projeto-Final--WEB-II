@@ -12,11 +12,15 @@ class Person
 
     public function __construct(
         string $name,
-        int $cpf,
+        string $cpf,
         string $birthDate,
-        string $email
+        string $email,
+        int $id=0
     )
     {
-        
+        $this->name = $name;
+        $this->cpf = $cpf;
+        $this->birthDate = $birthDate;
+        $this->email = $email;
     }
 }
